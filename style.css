@@ -810,13 +810,14 @@ header{
   
   padding: 1rem;
   text-align: center !important;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 .head-t{
   font-family: "tungstenw05-medium", "Oswald", sans-serif;
   font-size: 4rem;
   line-height: 6rem;
   margin-bottom: 1rem;
+  margin-top: auto;
   color: black;
   z-index: 2;
 }
