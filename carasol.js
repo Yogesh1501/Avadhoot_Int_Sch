@@ -54,3 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
+document.getElementById('toggleBtn').addEventListener('click', function() {
+  document.querySelector('.navigation ul').classList.toggle('show-nav');
+});
