@@ -12,6 +12,43 @@ body{
 
 }
 
+.service-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-box {
+  width: 30%;
+  padding: 20px;
+  background-color: #029aff;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-box:hover {
+  background-color: #094f7e;
+  transform: translateY(-5px);
+}
+
+.service-box i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 14px;
+}
+
+/* Replace with the actual Font Awesome link */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+
 /* .main-body-part{}   */
 
 
@@ -19,23 +56,57 @@ header{
   width: 100%;
   z-index: 5000;
   overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-.navbar {
+
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(/img/section_notch_bottom.png) 20% round;
+}
+
+.ad-co-div-h{
+  background-color: #e6fffa;
+  display: flex;
+  width: auto;
+  
+}
+
+.ad-co{
+  width: 25rem;
+  margin: auto;
+  padding: 2rem 2.8rem;
+}
+
+.ad-co a span{
+  font-size: 1.2rem;
+  font-weight: 530;
+  color: #094f7e;
+}
+
+.ad-co a{
+  text-decoration: none;
+}
+nav {
   width: 100vw;
   padding: 0 3rem;
-  
-  position: relative;
+  border-radius: 30px;
+  position: sticky;
   top: 0;
+  left: 0;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   overflow-x: hidden;
   z-index: 2;
-  background-color: #aa33aa;
+  background-color: #094f7e;
 }
 
 .logo img {
+  border-radius: 50%;
   width: 4rem;
   height: 4rem; /* Adjust height as needed */
 }
@@ -60,18 +131,20 @@ header{
   font-size: 1.2rem;
   margin: 0 20px;
   text-align: center;
+  color: #f2f2f2;
 }
 .nav-links {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   text-align: justify;
-  margin-right: 2rem; 
-  margin-left: 2rem;
+  /* margin-right: 2rem;  */
+  margin-left: 120px;
+  
 }
 
 .nav-link {
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   margin-right:  3rem;
   font-size: 1.3rem;
@@ -91,6 +164,8 @@ header{
 .fa-bars{
   width: 1rem;
   height: 1rem;
+  position: relative;
+   right: -300px;
 }
 
 .social-icon img {
@@ -101,7 +176,7 @@ header{
 .social-icons {
   display: flex;
   flex-wrap: nowrap;
-  margin-left: auto;
+  
   font-size: 1.5rem;
   list-style: none;
   padding: 0;
@@ -111,8 +186,8 @@ header{
   margin-right: 1rem;
 }
 
-.fa-facebook{
-  color: orange;
+.fa-facebook , .fa-instagram, .fa-whatsapp{
+  color: #fff;
 }
 
 @media screen and (min-width: 1201px) {
@@ -203,9 +278,7 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-}
+  
 #nav-toggle {
   float: right;
   margin: 1rem;
@@ -292,7 +365,7 @@ header{
 /* Slideshow container */
 .slideshow-container {
   display: flex;
-  
+  padding: 0;
   width: 100%;
   height: 90vh;
   position: relative;
@@ -818,7 +891,7 @@ header{
   line-height: 6rem;
   margin-bottom: 1rem;
   margin-top: auto;
-  color: black;
+  color: #094f7e;
   z-index: 2;
 }
 
@@ -887,18 +960,19 @@ header{
 }
 
 .main-card {
-  background-color: orange; /* Set the background color of the main card */
+  background-color: #094f7e; /* Set the background color of the main card */
   z-index: 2;
   padding: 10px ;
   font-size: 1rem;
   align-items: center;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .hover-card {
   font-family: system-ui;
-  background-color: #eeccff;;
+  background-color:#cce6ff;
   z-index: 1;
   opacity: 0;
   /* Set the height of the hover card */
@@ -931,7 +1005,7 @@ header{
 }
 
 .hover-content h2 {
-  color: #000;
+  color: #fff;
   display: inline-block;
   position: relative;
   font-size: 1.2rem;
@@ -1308,3 +1382,133 @@ iframe{
   }
  }
  
+
+
+
+
+ #myLinks{
+  display: none;
+  width: 100%;
+ }
+
+ #myLinks a {
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+#ico {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-bars{
+  color: #e6fffa;
+}
+
+.myLinks a:hover {
+  background-color: #e6fffa;
+  color: #094f7e;
+}
+
+.fa-bars{
+  display: hidden;
+}
+
+@media only screen and (max-width: 1200px){
+  .fa-bars{
+    display: block;
+    /* position: fixed; */
+  }
+
+  .logo-content{
+    display: block;
+    /* width: 95%; */
+  }
+
+
+}
+
+@media only screen and (min-width: 1250px){
+  .fa-bars{
+    float: right;
+   
+    display: none;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-links {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .social {
+    display: none;
+}
+}
+
+@media screen and (max-width: 930px) {
+  .ad-co {
+    padding: 2rem 1.2rem;
+}
+}
+
+@media screen and (max-width: 746px) {
+  .ad-co {
+    padding: 2rem 0.2rem;
+}
+}
+@media screen and (max-width: 746px) {
+  .ad-co {
+   
+    width: 100%;
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+.ad-co-div-h{
+  
+  display: block;
+  width: auto;
+  
+}
+}
+
+@media screen and (max-width: 746px) {
+  .logo-content {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.navbar{
+  justify-content: center;
+}
+.title{
+  justify-content: center;
+
+}
+.sub-title{
+  justify-content: center;
+}
+
+.fa-bars{
+  position: relative;
+  right: 0;
+}
+}
+
+@media only screen and (min-width:746px) and (max-width: 880px) {
+  .fa-bars{
+    
+     right: -100px;
+  }
+}

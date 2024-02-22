@@ -15,42 +15,11 @@ function showSlides() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var menuButton = document.getElementById('nav-toggle');
-  var mainNav = document.getElementById('main-nav');
-  var navLinks = document.querySelector('.nav-links');
-
-  menuButton.addEventListener('click', function() {
-      var dropdownMenu = document.getElementById('dropdown-menu');
-
-      // Check if dropdown menu exists, if not create one
-      if (!dropdownMenu) {
-          dropdownMenu = document.createElement('ul');
-          dropdownMenu.id = 'dropdown-menu';
-          dropdownMenu.className = 'dropdown-menu';
-          dropdownMenu.style.position = 'absolute';
-          dropdownMenu.style.top = mainNav.offsetHeight + 'px'; // Position below the header
-          dropdownMenu.style.left = '0';
-          dropdownMenu.style.width = '100%';
-          dropdownMenu.style.backgroundColor = '#fff'; // Example background color
-
-          // Clone navigation links and append to the dropdown menu
-          var clonedNavLinks = navLinks.cloneNode(true);
-          dropdownMenu.appendChild(clonedNavLinks);
-
-          // Append dropdown menu to the document body
-          document.body.appendChild(dropdownMenu);
-      } else {
-          // Toggle the visibility of the dropdown menu
-          dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-      }
-  });
-
-  // Close the dropdown menu when clicking outside of it
-  document.addEventListener('click', function(event) {
-      var dropdownMenu = document.getElementById('dropdown-menu');
-      if (dropdownMenu && event.target !== menuButton && !dropdownMenu.contains(event.target)) {
-          dropdownMenu.style.display = 'none';
-      }
-  });
-});
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
