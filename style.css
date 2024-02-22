@@ -1,6 +1,6 @@
 body{
   background: #fff !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: system-ui,sans-serif;
   width: 100%;
   overflow-x:hidden;
   display: block;
@@ -12,13 +12,27 @@ body{
 
 }
 
+@media only screen and (max-width:768px){
+  .service-boxes {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    grid-template-columns: 1fr;
+  }
+  
+}
+
 .service-boxes {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .service-box {
-  width: 30%;
+  width: 100%;
   padding: 20px;
   background-color: #029aff;
   text-align: center;
@@ -125,12 +139,12 @@ nav {
 }
 
 .sub-title{
-  
+  text-align: center;
   display: flex;
   flex-wrap: nowrap;
   font-size: 1.2rem;
   margin: 0 20px;
-  text-align: center;
+ 
   color: #f2f2f2;
 }
 .nav-links {
@@ -162,8 +176,11 @@ nav {
   /* Add other styles as needed */
 }
 .fa-bars{
-  width: 1rem;
-  height: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
   position: relative;
    right: -300px;
 }
@@ -589,8 +606,16 @@ nav {
   max-width: 100%;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 
@@ -663,11 +688,17 @@ nav {
 
 .footer-area {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   overflow-x: hidden;
-  background-color: #aa33aa;
+  background-color: #094f7e;
   
   width: 100%;
+}
+
+@media only screen and (max-width:1000px){
+.sub-fs1{
+  justify-content: center;
+}
 }
 
 .row-f{
@@ -710,11 +741,14 @@ nav {
 
 
 .wow li a{
-  color: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  padding-bottom: 6px;
 }
 
 .fs{
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .tagline{
@@ -854,7 +888,7 @@ nav {
   background-size: cover;
   font-family: system-ui;
   /* opacity: 0.6; */
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .main-cont1 {
@@ -889,7 +923,7 @@ nav {
   font-family: "tungstenw05-medium", "Oswald", sans-serif;
   font-size: 4rem;
   line-height: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   margin-top: auto;
   color: #094f7e;
   z-index: 2;
@@ -1005,16 +1039,16 @@ nav {
 }
 
 .hover-content h2 {
-  color: #fff;
+  color: #094f7e;
   display: inline-block;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border-bottom: 1.5px solid #2eb82e;
 }
 
 .hover-content p {
-  font-size: 0.8rem;
-  color: #000;
+  font-size: 1rem;
+  color: #094f7e;
 }
 
 .card-container {
@@ -1058,6 +1092,7 @@ nav {
 .card-content1 h2 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .card-content1 p {
@@ -1101,6 +1136,12 @@ nav {
     margin-top: 0;
     font-size: 2.2rem;
    
+}
+
+.hover-content p {
+  margin-top: 0;
+  font-size: 0.8rem;
+ 
 }
 .main-card img {
   margin-top: 0.2rem;
@@ -1287,7 +1328,16 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
-  padding: 2rem;
+  padding: 0rem 2rem;
+  
+  
+}
+
+.row-sk{
+  display: grid;
+  grid-template-columns: 1fr ;
+  column-gap: 2rem;
+  padding: 0rem 2rem;
   
   
 }
@@ -1392,7 +1442,17 @@ iframe{
  }
 
  #myLinks a {
-  color: #000;
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+#myLinks a:hover {
+  color: #094f7e;
+  background-color: #e6fffa;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -1412,7 +1472,7 @@ iframe{
   color: #e6fffa;
 }
 
-.myLinks a:hover {
+#myLinks a:hover {
   background-color: #e6fffa;
   color: #094f7e;
 }
