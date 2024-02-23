@@ -24,15 +24,18 @@ body{
 }
 
 .service-boxes {
-  display: grid;
+  display: flex;
   margin-left: 2rem;
   margin-right: 2rem;
+  justify-content: space-evenly; 
+  flex-wrap: wrap;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 
 .service-box {
-  width: 100%;
+  width: 400px;
+  flex-wrap: wrap;
   padding: 20px;
   background-color: #029aff;
   text-align: center;
@@ -89,9 +92,9 @@ header{
 }
 
 .ad-co{
-  width: 25rem;
+  /* width: 25rem; */
   margin: auto;
-  padding: 2rem 2.8rem;
+  padding: 2rem 2.6rem;
 }
 
 .ad-co a span{
@@ -759,6 +762,13 @@ nav {
 .fs1{
   font-size: 1.7rem;
   color: orange;
+  text-align: center;
+  justify-content: center;
+}
+
+.sub-fs1{
+  text-align: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width:768px) {
