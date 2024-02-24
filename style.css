@@ -1324,12 +1324,12 @@ iframe{
   }
 
   .col1{
-    width: 100%;
-    padding: 1.5rem;
+    width: 80%;
+    
   }
   
   .col2 iframe{
-    width:300px;
+    width:250px;
     height:200px;
     border:0;
   }
@@ -1584,7 +1584,7 @@ iframe{
 
 @media screen and (max-width: 480px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: (auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
   }
 
