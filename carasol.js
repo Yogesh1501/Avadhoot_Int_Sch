@@ -23,3 +23,12 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+
+document.getElementById("see-more-btn").addEventListener("click", function() {
+  var images = document.querySelectorAll(".image");
+  for (var i = 0; i < images.length; i++) {
+    images[i].style.display = "block";
+  }
+  this.parentNode.removeChild(this);
+});

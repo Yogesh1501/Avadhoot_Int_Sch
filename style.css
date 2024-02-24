@@ -70,7 +70,7 @@ body{
 
   font-family: "Playfair Display", serif;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -78,7 +78,7 @@ body{
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 20px;
-  color: #000;
+  color: #fff;
   margin-bottom: 12px;
 }
 /* Replace with the actual Font Awesome link */
@@ -811,104 +811,8 @@ nav {
   }
 }
 
-/* Base styles for gallery */
 
-.gallary-head{
-  height: 80vh;
-  
-  
-}
-.gallery {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  background-image: url('');
-  
-  grid-gap: 20px;
-  
-}
-
-.gallery-title{
-  font-family: "tungstenw05-medium", "Oswald", sans-serif;
-  font-size: 4rem;
-  line-height: 6rem;
-  margin-bottom: 1rem;
-  color: #ffa500;
-  z-index: 2;
-  align-items: center;
-}
-
-.gallery-item {
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
-
-.overlay h2 {
-  
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-
-.gallery-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Media queries for mobile responsiveness */
-@media screen and (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 15px;
-  }
-
-  .overlay h2 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 10px;
-  }
-
-  .overlay h2 {
-    font-size: 16px;
-  }
-}
-
-/* @media screen and (max-width: 480px) {
-  .gallery {
-    grid-template-columns:1fr;
-    grid-gap: 10px;
-  }
-
-  .overlay h2 {
-    font-size: 16px;
-  }
-} */
-
+/*Gallery Css*/
 
 /* cources css */
 
@@ -926,8 +830,8 @@ nav {
   /* opacity: 0.6; */
   padding-top: 2rem;
 }
+
 .cardcomp {
-  
   padding-left: 6rem;
   padding-right: 6rem;
   overflow: hidden;
@@ -982,8 +886,6 @@ nav {
     font-size: 1.2rem;
   }
 }
-
-
 
 @media only screen and (max-width: 576px){
   .head-t{
@@ -1359,8 +1261,6 @@ nav {
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   padding: 0rem 2rem;
-  
-  
 }
 
 .row-sk{
@@ -1600,5 +1500,95 @@ iframe{
   .fa-bars{
     
      right: -100px;
+  }
+}
+
+
+
+
+/* Base styles for gallery */
+
+.gallery-head{
+  height: 80vh;
+  
+  
+}
+.gallery {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-image: url('');
+  
+  grid-gap: 20px;
+  
+}
+
+.gallery-title{
+  font-family: "tungstenw05-medium", "Oswald", sans-serif;
+  font-size: 4rem;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+  color: #ffa500;
+  z-index: 2;
+  align-items: center;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h2 {
+  
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 15px;
+  }
+
+  .overlay h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .overlay h2 {
+    font-size: 16px;
   }
 }
