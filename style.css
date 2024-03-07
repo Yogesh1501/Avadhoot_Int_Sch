@@ -279,10 +279,10 @@ nav {
     float: right;
     margin: 1rem;
 }
-  .social-icons{
+  /* .social-icons{
     display: none;
 
-  }
+  } */
 
   .logo img {
     width: 4rem;
@@ -324,9 +324,9 @@ nav {
   float: right;
   margin: 1rem;
 }
-.social-icons{
+/* .social-icons{
   display: none;
-}
+} */
   .nav-links {
       display: none;
   }
@@ -334,9 +334,9 @@ nav {
     float: right;
     margin: 1rem;
 }
-  .social-icons{
+  /* .social-icons{
     display: none;
-  }
+  } */
   .logo img {
     width: 3rem;
     height: 3rem; /* Adjust height as needed */
@@ -1470,7 +1470,7 @@ iframe{
 
 @media screen and (max-width: 1300px) {
   .social {
-    display: none;
+    /* display: none; */
 }
 }
 
