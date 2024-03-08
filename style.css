@@ -1428,6 +1428,8 @@ iframe{
 
 .fa-bars{
   color: #e6fffa;
+  font-size: 25px;
+  margin-top: 10px;
 }
 
 #myLinks a:hover {
@@ -1521,13 +1523,15 @@ iframe{
 .fa-bars{
   position: relative;
   right: 0;
+  margin-right: 50px;
+
 }
 }
 
 @media only screen and (min-width:746px) and (max-width: 880px) {
   .fa-bars{
     
-     right: -100px;
+     right: -150px;
   }
 }
 
